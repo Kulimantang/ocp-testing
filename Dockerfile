@@ -22,7 +22,7 @@ COPY . .
 # Tell Docker which port should be exposed by the container:
 # only necessary when using Docker Desktop?!
 # not really needed from the commandline
-EXPOSE 4000
+EXPOSE 8080
 
 # add command to run Application inside container (not with RUN command, since RUN refers to commands running at build time) --> CMD Command: specifies Commands that are executed at runtime, when the conatainer begins to run
 CMD ["node", "app.js"]
